@@ -1,0 +1,89 @@
+img {
+    pointer-events: none;
+}
+
+.story-container {
+    width: 600px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68);
+    margin: 30px 0;
+}
+
+.story-container ul{
+    list-style: none;
+    user-select: none;
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px 15px;
+}
+
+.story-container ul li {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-container ul li:first-child {
+    padding-left: 10px;
+}
+
+.story-container ul li:last-child {
+    padding-right: 10px;
+}
+
+.story-container ul li .story {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 1px;
+    position: relative;
+}
+
+/* .story-container ul li.has-story .story {
+    padding: 2px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+} */
+
+.story-container ul li .story img {
+    padding: 4px;
+    border: 2px solid #050a11;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.story-container ul li span {
+    color: black;
+    font-weight: 300;
+    font-size: 15px;
+    max-width: 75px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .story-container {
+        width: 475px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
